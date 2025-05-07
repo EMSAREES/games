@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+
+    <link rel="stylesheet" href="/Juegos/RockPaperScissor/css/RPS.css">
+</head>
+<body>
+    <a href="/index.html" class="back-arrow">⬅ Volver</a>
+    
+    <div class="game-container">
+        <div class="game-layout">
+            <div class="game-board container">
+                <div class="game-board">
+                    <div class="player-side">
+                        <div class="player-label">YOU</div>
+                        <div class="choice-icon" id="picture_you">
+                            
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="player-side">
+                        <div class="player-label">Computador</div>
+                        <div class="choice-icon" id="picture_computer">
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="details">
+                    <p id="result"></p>
+                </div>
+            </div>
+
+            <div class="scores">
+                <p>played :
+                    <span id="Games_playeds">0</span>
+                </p>
+                
+                <p>Computer :
+                    <span id="computer_score">0</span>
+                </p>
+                <p>
+                    You :
+                    <span id="user_score">0</span>
+                </p>
+
+                <button class="scores_reset" id="scores_reset">Reset</button>
+            </div>
+        </div>
+        <div class="choices" id="weapons">
+            <button value="rock">
+                <div class="choice-button" id="rock">
+                    <img src="/Juegos/RockPaperScissor/img/rock.png"  alt="rock">
+                </div>
+            </button>
+            
+            <button  value="paper">
+                <div class="choice-button" id="paper">
+                    <img src="/Juegos/RockPaperScissor/img/paper.png" alt="paper">
+                </div>
+            </button>
+            
+            <button value="scissors" >
+                <div class="choice-button" id="scissors"> 
+                    <img src="/Juegos/RockPaperScissor/img/scissor.png" alt="scissors">
+                </div>
+            </button>
+        </div>
+
+    </div>
+
+    <script src="/Juegos/RockPaperScissor/RPS.js"></script>
+</body>
+</html>

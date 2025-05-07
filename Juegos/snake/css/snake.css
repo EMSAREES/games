@@ -1,0 +1,333 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #a3a1a1;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.gameboy {
+  width: 400px;
+  height: 650px;
+  background-color: #E0E0E0;
+  border-radius: 10px 10px 60px 10px;
+  position: relative;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),
+              -2px -2px 8px rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.brand {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 14px;
+  color: #7777a1;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.title {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  font-size: 20px;
+  color: #7777a1;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.screen-container {
+  width: 300px;
+  height: 280px;
+  background-color: #777;
+  margin: 50px auto 30px;
+  border-radius: 10px 10px 40px 10px;
+  padding: 15px;
+  position: relative;
+}
+
+.screen {
+  width: 240px;
+  height: 220px;
+  background-color: #8bac0f;
+  margin: 10px auto;
+  position: relative;
+  border: 2px solid #555;
+}
+
+.power-indicator {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 8px;
+  height: 8px;
+  background-color: #c00;
+  border-radius: 50%;
+  box-shadow: 0 0 3px #f00;
+}
+
+.power-text {
+  position: absolute;
+  top: 10px;
+  left: 32px;
+  font-size: 10px;
+  color: #c00;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* D-Pad */
+.dpad-container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.dpad {
+  position: absolute;
+  background-color: #444;
+}
+
+.dpad-horizontal {
+  display: flex;
+  justify-content: space-between; /* Separa los botones */
+  width: 90px; /* Ajusta el tamaño del contenedor */
+  height: 30px;
+  left: 5px;
+  top: 35px;
+  position: relative; /* Permite posicionar elementos internos */
+}
+
+.dpad-horizontal_button {
+  width: 30px;
+  height: 30px;
+  background-color: #444;
+  border: none;
+}
+
+.dpad-horizontal_button:active {
+  background-color: #333;
+}
+
+
+.dpad-vertical {
+  width: 30px;
+  height: 90px;
+  left: 35px;
+  top: 5px;
+  display: flex;             /* Agregado */
+  flex-direction: column;    /* Organiza los botones en columna */
+  align-items: center;       /* Centra los botones horizontalmente */
+  justify-content: space-between; /* Espacia verticalmente */
+}
+
+.dpad-vertical_button {
+  width: 30px;
+  height: 30px;
+  background-color: #444;
+  border: none;
+}
+
+.dpad-vertical_button:active {
+  background-color: #333;
+}
+
+/* Action Buttons */
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 30px;
+}
+
+.ab-buttons {
+  display: flex;
+  margin-top: 15px;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  background-color: #9e0b0f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  margin: 0 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transform: rotate(-15deg);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: rgb(116, 7, 7); /* Verde */
+}
+
+
+/* Start/Select Buttons */
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.menu-button {
+  width: 60px;
+  height: 15px;
+  background-color: #777;
+  border-radius: 10px;
+  margin: 0 10px;
+  transform: rotate(-25deg);
+  cursor: pointer;
+}
+
+.menu-button:active {
+  background-color: #5a5959; 
+}
+
+
+.speaker {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.speaker-line {
+  width: 50px;
+  height: 3px;
+  background-color: #777;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+
+.nintendo-logo {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #777;
+}
+
+
+.label {
+  margin: 0 15px;
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+}
+
+.menu-labels {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.menu-label {
+  margin: 0 15px;
+  font-size: 12px;
+  color: #555;
+  font-weight: bold;
+}
+
+
+
+
+.screen p {
+  color: #39411c;
+  font-weight: bold;
+  position: relative;
+  top: -18px;
+  left: 10px;
+} 
+
+#gameCanvas {
+  background-color: #9bbc0f;
+  position: relative;
+  top: -33px;
+  left: 6px;
+  border: #0e5a0b83 2px solid;
+}
+
+/* Ventana emergente */
+.popup {
+  display: none;
+  position: absolute;
+  width: 240px;
+  height: 220px;
+  background-color: #9bbc0f;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+.popup-content {
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.space-key {
+    display: inline-block;
+    background-color: #0e5a0b;
+    border: 2px solid #0e5a0b;
+    border-radius: 4px;
+    padding: 3px 20px;
+    margin-top: 10px;
+    color: #8bac0f;
+    font-family: monospace;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#gameOverPopup {
+  display: none;
+  position: absolute;
+  width: 240px;
+  height: 220px;
+  background-color: #9bbc0f;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #00f7ff;
+  background: #222;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00f7ff33;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.back-arrow:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00f7ff;
+}
+
+body {
+  position: relative;
+  padding-top: 60px;
+}

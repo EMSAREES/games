@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+
+    <link rel="stylesheet" href="/Juegos/snake/css/snake.css">
+</head>
+<body>
+    <a href="/index.html" class="back-arrow">⬅ Volver</a>
+    
+    <div class="gameboy">
+        <div class="brand">Nintendo®</div>
+        <div class="title">GAME BOY</div>
+        
+        <div class="screen-container">
+            <div class="power-indicator"></div>
+            <div class="power-text">POWER</div>
+            <div class="screen">
+                <p>Puntaje: <span id="score">0</span></p>
+              <canvas id="gameCanvas" width="224" height="196"></canvas>
+
+               <!-- Ventana emergente dentro del canvas -->
+                <div class="popup" id="miPopup">
+                    <div class="popup-content">
+                        <h3 style="text-align: center; margin-top: 0; color: #0e5a0b;">SNAKE</h3>
+                        <p style="text-align: center; font-weight: bold; color: #0e5a0b;">Presiona SPACE para iniciar</p>
+                        <div style="text-align: center; margin-top: 20px;">
+                            <div class="space-key">SPACE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ventana emergente de Game Over -->
+                <div class="popup" id="gameOverPopup">
+                    <div class="popup-content">
+                        <h3 style="text-align: center; margin-top: 0; color: #5a0e0b;">GAME OVER</h3>
+                        <p style="text-align: center; font-weight: bold; color: #5a0e0b;">Presiona SPACE para reiniciar</p>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 20px;">
+                        <div class="space-key">SPACE</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="dpad-container">
+                <div class="dpad dpad-horizontal">
+                    <button class="dpad-horizontal_button" id="button_izquierda"> </button>
+                    <button class="dpad-horizontal_button" id="button_derecha"></button>
+                </div>
+
+                <div class="dpad dpad-vertical">
+                    <button class="dpad-vertical_button" id="button_arriba"> </button>
+                    <button class="dpad-vertical_button" id="button_abajo"></button>
+                </div>
+
+            </div>
+       
+
+            
+            <div class="buttons-container">
+                <div class="ab-buttons">
+                    <div class="button">B</div>
+                    <div class="button">A</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-buttons">
+            <div class="menu-button"></div>
+            <div class="menu-button" id="startButton"></div>
+        </div>
+        
+        <div class="menu-labels">
+            <div class="menu-label">SELECT</div>
+            <div class="menu-label">START</div>
+        </div>
+        
+        <div class="speaker">
+            <div class="speaker-line"></div>
+            <div class="speaker-line"></div>
+            <div class="speaker-line"></div>
+            <div class="speaker-line"></div>
+            <div class="speaker-line"></div>
+            <div class="speaker-line"></div>
+        </div>
+        
+        <div class="nintendo-logo">Nintendo®</div>
+    </div>
+
+    <script src="/Juegos/snake/snake.js"></script>
+</body>
+</html>

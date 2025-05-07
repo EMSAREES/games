@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Juegos</title>
+
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <h1 class="titulo">Menú de Juegos</h1>
+  <div class="menu-container">
+    <div class="menu-item" onclick="irAJuego('/Juegos/snake/snake.html')">
+      <img src="/img/snake.png" alt="snake" />
+      <p>snake</p>
+    </div>
+    <div class="menu-item" onclick="irAJuego('/Juegos/NumberGumessing/numberG.html')">
+      <img src="/img/numberGumes.png" alt="numberGumes" />
+      <p>numberGumes</p>
+    </div>
+    <div class="menu-item" onclick="irAJuego('/Juegos/Breakout/Breakout.html')">
+      <img src="/img/breakout.png" alt="breakout" />
+      <p>breakout</p>
+    </div>
+    <div class="menu-item" onclick="irAJuego('/Juegos/RockPaperScissor/RPS.html')">
+      <img src="/img/piedraPapelTijera.png" alt="piedraPapelTijera" />
+      <p>Tres en raya</p>
+    </div>
+    <div class="menu-item" onclick="irAJuego('/Juegos/TicTacToe/ticTacToe.html')">
+      <img src="/img/ticTacToe.png" alt="Juego 5" />
+      <p>Tic Tac Toe</p>
+    </div>
+  </div>
+
+  <script>
+    function irAJuego(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
